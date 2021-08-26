@@ -41,8 +41,8 @@
                 </b-carousel-slide>
     </b-carousel>
          <!-- Carousal is closed here -->
-<HelloWorld msg="Below are the Best Blogs of the Day"/>
-<Cards :allBlogs="allBlogs"/>
+         <br>
+<Cards/>
    <div class="container">
 
   </div>
@@ -52,13 +52,11 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 import Cards from '@/components/Cards.vue'
 export default {
   name: 'Home',
-  props: ['allBlogs'],
+  // props: ['allBlogs'],
   components: {
-    HelloWorld,
     Cards
   },
   data () {
